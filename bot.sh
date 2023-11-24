@@ -17,12 +17,12 @@ case "$OSTYPE" in
         ;;
 esac
 
-echo "$info" >> output.txt
+echo "$info" >> ./contracts/output.txt
 echo "$info"
 echo
 
 # Ship it
-git add output.txt
+git add .
 git commit -m "$info"
 git push origin master # or "master" on old setups
 
